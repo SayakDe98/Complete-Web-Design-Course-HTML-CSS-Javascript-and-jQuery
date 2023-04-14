@@ -1,0 +1,696 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: 'Heebo', sans-serif;
+    padding-top: 80px;
+    /*min-height: 3000px;*/
+}
+
+/* Design for Large Desktop */
+.container {
+    width: 1440px;
+    max-width: 90%;
+    margin: auto;
+    padding: 0 16px;
+
+}
+
+/* End of design for Large Dekstop */
+
+
+ul {
+
+    margin: 0;
+    padding: 0;
+}
+
+header {
+
+    background-color: #FFF;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.15);
+    height: 80px;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+
+}
+
+header .logo {
+    display: inline-block;
+    font-size: 27px;
+    font-family: Heebo;
+    /* width:auto; */
+}
+
+header .logo a {
+    text-decoration: none;
+    color: black;
+}
+
+header .logo .blue-dot {
+
+    /* background-color: blue;
+        width: 5px;
+        height: 0px;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 14px 4px;
+        border-radius: 1rem;
+        padding:0.5rem; Used rem*/
+    background-color: blue;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 14px 6px;
+    border-radius: 150px;
+    padding: 7px;
+
+}
+
+header li.menu-icon {
+    display: none;
+}
+
+header nav ul li.menu-icon img {
+    vertical-align: middle;
+    width: 24px;
+    height: auto;
+}
+
+header nav {
+    display: inline-block;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #363636;
+    font-family: Heebo;
+    font-size: 15px;
+    letter-spacing: 0.37px;
+    margin: 24px;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #3E50E5;
+}
+
+header nav ul li a:last-of-type {
+    margin-right: 0;
+}
+
+
+section.hero {
+    position: relative;
+}
+
+section.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/*made changes here*/
+header .logo {
+    display: flex;
+    justify-content: column;
+    /* height: 21.3px;
+        width: 69.16px; */
+    color: #000;
+    font-family: "Heebo Light";
+    font-size: 27px;
+    letter-spacing: 0.63px;
+    line-height: 40px;
+    text-align: center;
+}
+
+section.hero .container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+    top: 63px;
+    right: 177px;
+    color: #FFF;
+}
+
+section.hero .container h1 {
+    color: #FFF;
+    font-family: Heebo;
+    font-size: 50px;
+    letter-spacing: 1.25px;
+    line-height: 56px;
+    font-weight: normal;
+    max-width: 500px;
+}
+
+section.hero .container p {
+    /* display:flex;
+        justify-content:space-between;
+        flex-direction:row; */
+    /*For the code of inner-container*/
+    max-width: 518px;
+    color: #FFF;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 28px;
+    margin-top: 0;
+    margin-bottom: 21px;
+}
+
+.hero .container .inner-container button {
+    width: 220px;
+    border-radius: 220px;
+    max-width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    line-height: 24px;
+    text-align: center;
+    background-color: #3E50E5;
+    color: #FFF;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    /*This isn't required because we made our text already in upeercase*/
+}
+
+.hero .container .inner-container button:hover {
+
+    color: #3E50E5;
+    background-color: #FFF;
+    border-radius: 92px;
+    background-color: #FFF;
+    border: 1px solid #3E50E5;
+    cursor: pointer;
+}
+
+
+
+.hero-content button:hover {
+    /* font-family: Heebo;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.4px;
+        line-height: 24px; */
+    color: #3E50E5;
+    background-color: #FFF;
+    border-radius: 92px;
+    background-color: #FFF;
+    border: 1px solid #3E50E5;
+    cursor: pointer;
+}
+
+*/ section.best-sellers h2 {
+    padding-top: 80px;
+
+
+}
+
+section.best-sellers h2 {
+    color: #000;
+    font-family: Heebo;
+    font-size: 34px;
+    letter-spacing: 0.85px;
+    line-height: 42px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    font-weight: normal;
+    margin: 0 0 14px 0;
+
+}
+
+section.best-sellers hr {
+    border: none;
+    border-top: 6px solid #67F11D;
+    width: 66px;
+
+}
+
+section.best-sellers .container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 8px;
+}
+
+section.best-sellers .product-slider {
+    margin-top: 76px;
+}
+
+section.best-sellers .product-slider .product {
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    width: 33%;
+    text-align: center;
+    margin: 0 8px;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: default;
+}
+
+section.best-sellers .product-slider .product:hover .product-info button {
+    color: #FFF;
+    background-color: #3E50E5;
+    border: 1px solid blue;
+    cursor: pointer;
+}
+
+section.best-sellers .product img {
+    max-width: 100%;
+}
+
+section.best-sellers .product-slider .product.new::before {
+    content: "New";
+    background-color: red;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.35px;
+    line-height: 21px;
+    text-align: center;
+    padding: 4px 15px;
+    border-radius: 40px;
+    background-color: #EC1C1C;
+
+}
+
+section.best-sellers .product-slider .product .product-info {
+    margin-top: 50px;
+}
+
+section.best-sellers .product-slider .product .product-info .categories {
+    color: #3E50E5;
+    font-family: Heebo;
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    line-height: 30px;
+    font-weight: normal;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+section.best-sellers .product-slider .product .product-info .title {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    margin-bottom: 6px;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+section.best-sellers .product-slider .product .product-info .price {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    line-height: 30px;
+    margin-bottom: 16px;
+    margin-top: 0;
+
+}
+
+section.best-sellers .product-slider .product .product-info .original-price {
+    color: #EC1C1C;
+}
+
+section.best-sellers .product-slider .product .product-info .discounted-price {
+    color: #9B9B9B;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    line-height: 30px;
+    text-decoration: line-through;
+}
+
+
+section.best-sellers .product-slider .product .product-info button {
+    height: 50px;
+    width: 219.5px;
+    border-radius: 220px;
+    border: 1px solid #000;
+    background-color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    line-height: 24px;
+}
+
+section.newsletter {
+    background-color: rgba(200, 200, 200, 0.18);
+    max-width: 955px;
+    text-align: center;
+    padding: 72px 0;
+    margin: 80px auto;
+}
+
+section.newsletter h3 {
+    color: #000;
+    font-family: Heebo;
+    font-size: 24px;
+    letter-spacing: 0.6px;
+    line-height: 42px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+section.newsletter p {
+    color: #000;
+    font-family: Heebo;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    line-height: 42px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+section.newsletter form {
+    display: flex;
+    justify-content: center;
+}
+
+section.newsletter form input {
+    height: 50px;
+    width: 326px;
+    max-width: 80%;
+    box-sizing: border-box;
+    border-radius: 170px 0 0 170px;
+    color: #3E3E3E;
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    line-height: 21px;
+    padding-left: 22px;
+    border-right: none;
+
+}
+
+section.newsletter form button {
+    height: 50px;
+    width: 145px;
+    max-width: 20%;
+    box-sizing: border-box;
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    line-height: 21px;
+    border-radius: 0 60px 60px 0;
+    background-color: #3E50E5;
+    border: 1px solid #3E50E5;
+    color: #FFF;
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+section.newsletter form button:hover {
+    color: #3E50E5;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #3E3E3E;
+}
+
+footer .bottom-nav {
+    padding: 60px 0;
+    background-color: #3E3E3E;
+    display: flex;
+    flex-direction: row;
+}
+
+footer .bottom-nav ul {
+    list-style: none;
+}
+
+footer .bottom-nav ul li a {
+    color: #E0E0E0;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    line-height: 22px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+footer .bottom-nav ul .list-title {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #FFF;
+}
+
+footer .bottom-nav ul li a:hover {
+    color: #3E50E5;
+}
+
+footer .copyright-text {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    line-height: 22px;
+}
+
+
+/**************************************
+    ***CSS MEDIA QUERIES*******************
+    */
+/* Start of design for Small Dekstop */
+@media screen and (max-width:1440px) {
+    .container {
+        max-width: 90%;
+        width: 1180px;
+        /* background-color:blue; */
+    }
+
+    header {
+        height: 70px;
+    }
+
+    body {
+        padding-top: 70px;
+    }
+
+    section.hero .container {
+        top: 6rem;
+        right: 0rem;
+        left: 1rem;
+        bottom: 17rem;
+    }
+
+    section.hero .container h1 {
+        font-size: 44px;
+        letter-spacing: 1.1px;
+        line-height: 50px;
+        max-width: 495px;
+        margin-bottom: 12px;
+    }
+
+    section.hero .container p {
+        font-size: 18px;
+        letter-spacing: 0.45px;
+        line-height: 26px;
+        margin-bottom: 12px;
+    }
+
+    .hero .container .inner-container button {
+        height: 50px;
+        width: 220px;
+        font-size: 14px;
+        letter-spacing: 0.35px;
+        line-height: 21px;
+    }
+
+}
+
+/* End of design for Small Dekstop */
+/* Start of design for Tablet */
+@media screen and (max-width:960px) {
+    .container {
+        max-width: 92%;
+        /* background-color:green; */
+
+    }
+
+    header .logo {
+        font-size: 24px;
+        font-family: Heebo;
+    }
+
+    header nav ul li {
+        display: none;
+    }
+
+    header nav ul li.menu-icon {
+        display: inline-block;
+    }
+
+    header .logo .blue-dot {
+        margin: 15px 5px;
+        padding: 5px;
+    }
+
+    section.hero .container {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        top: 15rem;
+        right: -1rem;
+        bottom: 25rem;
+        left: 0rem;
+    }
+
+    section.hero .container h1 {
+        font-size: 40px;
+        letter-spacing: 1px;
+        line-height: 46px;
+
+
+    }
+
+    section.hero .container p {
+
+        font-size: 16px;
+        letter-spacing: 0.4px;
+        line-height: 24px;
+    }
+
+    .hero .container .inner-container button {
+        height: 50px;
+        width: 196px;
+        font-size: 14px;
+        letter-spacing: 0.35px;
+        line-height: 21px;
+
+    }
+
+    section.best-sellers .product-slider {
+        margin-top: 48px;
+    }
+
+    section.best-sellers .product-slider .product {
+        min-width: 220px;
+        margin: 17px 8px;
+    }
+
+    section.best-sellers .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* End of design for Tablet */
+/* Start of design for mobile */
+@media screen and (max-width:576px) {
+    footer .bottom-nav {
+        padding: 60px 0;
+        background-color: #3E3E3E;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    header .logo {
+        font-size: 18px;
+        font-family: Heebo;
+    }
+
+    header .logo .blue-dot {
+        margin: 16px 3px;
+        padding: 4px;
+    }
+
+    section.hero .container {
+        position: static;
+    }
+
+    section.hero .container h1 {
+        color: #000;
+        font-size: 32px;
+        letter-spacing: 0.8px;
+        line-height: 38px;
+        text-align: center;
+        padding-top: 0rem;
+        color: black;
+        margin-bottom: 0rem;
+    }
+
+    section.hero .container p {
+
+        display: none;
+    }
+
+    .hero .container .inner-container button {
+        font-size: 14px;
+        letter-spacing: 0.35px;
+        line-height: 21px;
+        margin: auto;
+        margin-top: 27px;
+        display: block;
+        margin-bottom: 3rem;
+    }
+
+    section.best-sellers .product-slider .product {
+        width: 82%;
+        max-width: 360px;
+    }
+
+    section.newsletter {
+        padding: 44px 0;
+        margin: 60px auto;
+    }
+
+    section.newsletter form input {
+        max-width: 65%;
+    }
+
+    section.newsletter form button {
+
+        max-width: 35%;
+
+    }
+
+    footer .bottom-nav .container {
+
+        align-items: center;
+
+    }
+
+    footer .bottom-nav .container ul>li {
+        text-align: center;
+    }
+
+    footer .bottom-nav ul:last-of-type {
+        margin-bottom: 0;
+    }
+
+}
+
+/* End of  of design for mobile */
